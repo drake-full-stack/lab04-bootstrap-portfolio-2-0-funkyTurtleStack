@@ -4,9 +4,10 @@ body
     color: blueviolet;
 }
 
-nav
+.theme-primary
 {
-    color:blue;
+    color: blueviolet;
+    background-color: black;
 }
 
 .navbar, .navbar .navbar-brand, .navbar .nav-link
@@ -34,4 +35,84 @@ nav
     border-width: 1px;
     color: blueviolet;
 
+}
+
+.icon-circle
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid blueviolet;
+  padding: 6px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  overflow: visible;
+}
+
+.icon-circle-big
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid blueviolet;
+  padding: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+.icon-btn
+{
+  padding: 0;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: blueviolet;
+
+}
+
+.icon-btn:hover
+{
+  color: cyan;
+}
+
+.card-btn
+{
+    color: white;
+    background-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.card-btn:hover
+{
+    color: white;
+    background-color: rgb(118, 3, 226);
+    border-color: rgb(118, 3, 226);
+}
+
+.hov:hover
+{
+    color:cyan;
+}
+
+.card:hover {
+    transform: translateY(-1px);
+    border-color: cyan;
+}
+
+:root {
+    --bs-primary: blueviolet;
+    --bs-secondary: blueviolet;
+    --bs-success: blueviolet;
 }

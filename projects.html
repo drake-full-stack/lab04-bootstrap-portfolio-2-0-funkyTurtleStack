@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
 
+    <!--Lucide Icons-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,29 +16,52 @@
 </head>
 <body class="m-2 p-1">
     <header>
+        <div class="container mb-3">
+            <div class="row">
+                <div class="d-flex flex-wrap">
+                    <a href="index.html" class="btn icon-btn">
+                        <i data-lucide="house" class="icon-circle-big"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="github" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="mail" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="instagram" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="twitter" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="facebook" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="twitch" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="youtube" class="icon-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand-lg cool-border">
             <div class="container">
-                <a class="navbar-brand" href="#">Braedon's Website</a>
+                <a class="navbar-brand">Braedon's Website</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="projects.html">Projects</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!--
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="hobbies.html">Hobbies</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-        -->
     </header>
     <main>
         <br>
@@ -48,19 +74,6 @@
         </p>
         <br>
 
-        <!-- Here is code for makeing rows and columns
-        <div class="container">                             Centers content, sets max-width
-            <div class="row">                               Creates horizontal group
-                <div class="col-md-6">                      Takes up 6/12 columns on medium+ screens
-                    <p class="text-center">skong</p>
-                </div>
-                <div class="col-md-6">                      Takes up other 6/12 columns
-                    <p class="text-center">skong</p>
-                </div>
-            </div>
-        </div>
-        -->
-
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 cool-card">
@@ -68,7 +81,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Placeholder Title</h5>
                         <p class="card-text">Placeholder Description</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-primary card-btn">
+                            <i data-lucide="joystick"></i>
+                            Game Project
+                        </a>
                     </div>
                 </div>
             </div>
@@ -78,7 +94,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Placeholder Title</h5>
                         <p class="card-text">Placeholder Description</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-primary card-btn">
+                            <i data-lucide="box"></i>
+                            3D Project
+                        </a>
                     </div>
                 </div>
             </div>
@@ -88,7 +107,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Placeholder Title</h5>
                         <p class="card-text">Placeholder Description</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-primary card-btn">
+                            <i data-lucide="pencil"></i>
+                            Drawing Project
+                        </a>
                     </div>
                 </div>
             </div>
@@ -98,12 +120,38 @@
                     <div class="card-body">
                         <h5 class="card-title">Placeholder Title</h5>
                         <p class="card-text">Placeholder Description</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
+                        <a href="#" class="btn btn-primary card-btn">
+                            <i data-lucide="book-open"></i>
+                            Writing Project
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- examples
+        <a href="#" class="btn btn-outline-primary">
+            <i data-lucide="github"></i> View Code
+        </a>
+
+        <div class="skill-item">
+            <i data-lucide="code"></i>
+            <span>JavaScript</span>
+        </div>
+
+        <i data-lucide="mail"></i> email@example.com
+        <i data-lucide="linkedin"></i> LinkedIn Profile
+
+        <i data-lucide="github" class="icon-circle"></i>
+        <span class="icon-circle">
+            <i data-lucide="github"></i>
+        </span>
+        -->
+
     </main>
+
+    <!--Lucide-->
+    <script>lucide.createIcons();</script>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

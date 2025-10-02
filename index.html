@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
 
+    <!--Lucide Icons-->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,6 +16,37 @@
 </head>
 <body class="m-2 p-1">
     <header>
+        <div class="container mb-3">
+            <div class="row">
+                <div class="d-flex flex-nowrap">
+                    <a href="index.html" class="btn icon-btn">
+                        <i data-lucide="house" class="icon-circle-big"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="github" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="mail" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="instagram" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="twitter" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="facebook" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="twitch" class="icon-circle"></i>
+                    </a>
+                    <a href="#" class="btn icon-btn">
+                        <i data-lucide="youtube" class="icon-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar navbar-expand-lg cool-border">
             <div class="container">
                 <a class="navbar-brand" href="#">Braedon's Website</a>
@@ -21,9 +55,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link hov" href="projects.html">Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -52,6 +86,9 @@
         </p>
         <img src="TheSilkSongIsReal.jpeg" alt="The Silksong is real!" width="100%">
     </main>
+
+    <!--Lucide-->
+    <script>lucide.createIcons();</script>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
